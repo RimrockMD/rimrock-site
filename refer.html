@@ -1,0 +1,26 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Refer family | Rimrock Mobile Dentistry</title><meta name="description" content="Share Rimrock Mobile Dentistry with family and friends."><link rel="stylesheet" href="style.css"></head><body><header><div class="in"><a class="brand" href="index.html">Rimrock Mobile Dentistry</a><nav><a href="index.html">Home</a><a href="postop.html">Post-op care</a><a href="refer.html">Refer family</a></nav></div></header>
+<main>
+<h1 style="color:var(--navy)">Share with family and friends</h1>
+<p>Know someone who would like dental care that comes to them? Send them our information.</p>
+<p><button class="btn" id="share" type="button">Share this website</button> <button class="btn alt" id="copy" type="button">Copy link</button></p>
+<p id="msg" class="note" role="status"></p>
+<h2>Prefer to have us reach out?</h2>
+<p>Enter your relative's or friend's contact and we will introduce ourselves. <strong>Only share contact details with their permission, and no health information.</strong></p>
+<form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+<label>Their name<input name="friend_name" required></label>
+<label>Their phone or email<input name="friend_contact" required></label>
+<label>Your name (optional)<input name="from"></label>
+<button class="btn" type="submit">Send</button>
+</form>
+<p class="note" style="margin-top:18px">We do not offer rewards for referrals. We simply appreciate your trust.</p>
+</main>
+<script>
+var url=location.origin+location.pathname.replace(/[^/]*$/,'');
+document.getElementById('share').onclick=function(){
+ if(navigator.share){navigator.share({title:'Rimrock Mobile Dentistry',text:'Mobile dental care in San Antonio.',url:url})}
+ else{document.getElementById('copy').click()}};
+document.getElementById('copy').onclick=function(){
+ var m=document.getElementById('msg');
+ if(navigator.clipboard){navigator.clipboard.writeText(url).then(function(){m.textContent='Link copied.'},function(){m.textContent=url})}else{m.textContent=url}};
+</script>
+<footer>Rimrock Mobile Dentistry PLLC &middot; San Antonio, Texas &middot; <span class="todo">[PHONE]</span> &middot; <span class="todo">[EMAIL]</span><br>This website provides general information and is not a substitute for professional dental advice. Do not send private health information through this site.</footer></body></html>
