@@ -1,6 +1,6 @@
 # Rimrock Mobile Dentistry website
 
-Static site: index.html, postop.html, refer.html, style.css, postop-pain-schedule.png, plus the Spanish post-op page postop-es.html and postop-pain-schedule-es.png.
+Static site: index.html, botox.html, postop.html, refer.html, style.css, postop-pain-schedule.png, plus the Spanish post-op page postop-es.html and postop-pain-schedule-es.png.
 
 ## Publish with GitHub Pages
 1. GitHub > New repository > name it `rimrock-site` (public).
@@ -17,9 +17,3 @@ Static site: index.html, postop.html, refer.html, style.css, postop-pain-schedul
 - Confirm the services list (extractions, Botox) matches your license and insurance.
 - Make a QR code of the postop.html address for the handout.
 - Keep the financial dashboard OFF this public repo.
-
-## Adding the post-op videos
-1. Upload each video to YouTube and set visibility to Unlisted.
-2. Copy the 11-character ID from the video address (the part after `v=`).
-3. In postop.html (English) or postop-es.html (Spanish), paste it into the matching `data-yt=""`, for example `data-yt="AbC123xyz_0"`.
-4. Empty IDs show "Video coming soon." Do not show patients or faces without written consent.
