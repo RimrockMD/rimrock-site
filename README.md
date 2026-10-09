@@ -1,6 +1,6 @@
 # Rimrock Mobile Dentistry website
 
-Static site: index.html, botox.html, postop.html, refer.html, style.css, postop-pain-schedule.png, plus the Spanish post-op page postop-es.html and postop-pain-schedule-es.png.
+Static site: index.html, botox.html, postop.html, refer.html, style.css, postop-pain-schedule.png, the two pain-medicine videos postop-pain-medicine-en.mp4 and postop-pain-medicine-es.mp4, plus the Spanish post-op page postop-es.html and postop-pain-schedule-es.png.
 
 ## Publish with GitHub Pages
 1. GitHub > New repository > name it `rimrock-site` (public).
