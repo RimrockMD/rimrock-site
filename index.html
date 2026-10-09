@@ -1,22 +1,27 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Home | Rimrock Mobile Dentistry</title><meta name="description" content="Mobile dental care in San Antonio, Texas."><link rel="stylesheet" href="style.css"></head><body><header><div class="in"><a class="brand" href="index.html">Rimrock Mobile Dentistry</a><nav><a href="index.html">Home</a><a href="postop.html">Post-op care</a><a href="refer.html">Refer family</a></nav></div></header>
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Home | Rimrock Mobile Dentistry</title><meta name="description" content="Mobile dental care in San Antonio, Texas: extractions, Botox injections, exams and cleanings."><link rel="stylesheet" href="style.css"></head><body><header><div class="in"><a class="brand" href="index.html">Rimrock Mobile Dentistry</a><nav><a href="index.html">Home</a><a href="postop.html">Post-op care</a><a href="refer.html">Refer family</a></nav></div></header>
 <section class="hero"><div class="in"><h1>Dental care that comes to you.</h1><p>Rimrock Mobile Dentistry provides dental services at your location in the San Antonio area.</p><a class="btn" href="#contact">Request an appointment</a></div></section>
 <main>
 <h2>Services</h2>
-<p class="note"><span class="todo">[Dr. Hong: edit this list to match what you actually offer and are licensed/insured for.]</span></p>
-<div class="grid">
+<p class="note"><span class="todo">[Dr. Hong: edit this list to match what you actually offer and are licensed/insured for, including extractions and Botox.]</span></p>
+<div class="grid four">
+<div class="card"><h3>Extractions</h3><p>Simple and surgical extractions, with written and video aftercare instructions.</p></div>
+<div class="card"><h3>Botox injections</h3><p>Botox treatment where clinically appropriate, at your location.</p></div>
 <div class="card"><h3>Exams and cleanings</h3><p>Routine checkups and preventive care.</p></div>
-<div class="card"><h3>Extractions</h3><p>Simple and surgical extractions, with clear aftercare instructions.</p></div>
 <div class="card"><h3>Restorative care</h3><p>Fillings and other restorative treatment.</p></div>
 </div>
 <h2>About Dr. Hong</h2>
 <p><span class="todo">[Short bio: years in practice, training, why mobile dentistry. Keep claims factual and verifiable.]</span></p>
 <h2>Service area</h2>
 <p><span class="todo">[List cities or counties, e.g. San Antonio, Boerne, Cibolo, Schertz...]</span></p>
-<h2 id="contact">Request an appointment</h2>
-<p>Send your name and preferred way to be reached. We will contact you to schedule. <strong>Please do not include health details here.</strong></p>
+<h2 id="contact">Contact us for mobile treatment</h2>
+<p>Patients, families and referring offices: tell us what is needed and how to reach you. We will contact you to schedule. <strong>Please do not include health details here.</strong></p>
 <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+<input type="hidden" name="_subject" value="Rimrock mobile dentistry request">
 <label>Name<input name="name" required></label>
 <label>Phone or email<input name="contact" required></label>
+<label>I am the...<select name="who"><option>Patient</option><option>Family member or friend of the patient</option><option>Dental or medical office or facility</option></select></label>
+<label>What is needed<select name="service"><option>Extraction</option><option>Botox injection</option><option>Exam or cleaning</option><option>Not sure</option></select></label>
+<label>City or ZIP code<input name="area"></label>
 <label>Best time to call<input name="time"></label>
 <button class="btn" type="submit">Send request</button>
 </form>

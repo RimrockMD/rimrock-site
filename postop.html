@@ -1,9 +1,22 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Post-op care | Rimrock Mobile Dentistry</title><meta name="description" content="Care instructions after your dental procedure."><link rel="stylesheet" href="style.css"></head><body><header><div class="in"><a class="brand" href="index.html">Rimrock Mobile Dentistry</a><nav><a href="index.html">Home</a><a href="postop.html">Post-op care</a><a href="refer.html">Refer family</a></nav></div></header>
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Post-op care | Rimrock Mobile Dentistry</title><meta name="description" content="Care instructions, pain medicine schedule and videos after your dental procedure."><link rel="stylesheet" href="style.css"></head><body><header><div class="in"><a class="brand" href="index.html">Rimrock Mobile Dentistry</a><nav><a href="index.html">Home</a><a href="postop.html">Post-op care</a><a href="refer.html">Refer family</a></nav></div></header>
 <main>
 <h1 style="color:var(--navy)">After your procedure</h1>
 <p class="note"><span class="todo">[Dr. Hong: review and edit all instructions below before publishing. This is general guidance; your own written instructions come first.]</span></p>
 <div class="alert"><strong>Call us right away</strong> at <span class="todo">[PHONE]</span> for heavy bleeding that does not slow with pressure, fever, increasing swelling after day 3, trouble swallowing, or pain not controlled by your medicine. <strong>For trouble breathing or swelling that affects breathing, call 911.</strong></div>
-<div class="grid">
+
+<h2>Pain medicine schedule</h2>
+<p>Take ibuprofen and acetaminophen in turns, 2 hours apart. Tap the picture to open it full size or save it to your phone.</p>
+<figure class="figure"><a href="postop-pain-schedule.png" target="_blank" rel="noopener"><img src="postop-pain-schedule.png" width="1800" height="4170" loading="lazy" alt="Pain medicine schedule. Take ibuprofen 600 to 800 mg with soft or liquid food. Two hours later, take acetaminophen 500 mg with a full glass of water. Two hours after that, take ibuprofen with food again. Keep repeating during the day for up to 72 hours, or stop sooner when your pain is tolerable. Skip doses overnight. No more than 4 ibuprofen doses or 6 acetaminophen doses (3,000 mg) in 24 hours. Ask Dr. Hong first if you have kidney, liver or stomach problems, take a blood thinner, are pregnant, or are allergic to aspirin or ibuprofen."></a><figcaption>Pain medicine schedule. Ibuprofen with food, then acetaminophen 2 hours later, and repeat.</figcaption></figure>
+
+<h2>Video instructions</h2>
+<p class="note"><span class="todo">[Dr. Hong: upload each video to YouTube as Unlisted, then paste its 11-character video ID into data-yt below. Until then, "Video coming soon" shows. Do not show patients or faces without written consent.]</span></p>
+<div class="videos">
+<div class="video-card"><h3>After a tooth extraction</h3><div class="video" data-yt="" data-title="After a tooth extraction">Video coming soon.</div></div>
+<div class="video-card"><h3>After Botox</h3><div class="video" data-yt="" data-title="After Botox">Video coming soon.</div></div>
+</div>
+
+<h2>Care at a glance</h2>
+<div class="grid two">
 <div class="card"><h3>Bleeding</h3><ul class="list"><li>Bite gently on gauze for 30-45 minutes, then replace if needed.</li><li>Some oozing is normal for the first day.</li><li>Avoid spitting, rinsing hard and using straws.</li></ul></div>
 <div class="card"><h3>Swelling and comfort</h3><ul class="list"><li>Use a cold pack on the cheek, 20 minutes on and 20 off, the first day.</li><li>Take medicine only as directed by Dr. Hong.</li><li>Keep your head raised when resting.</li></ul></div>
 <div class="card"><h3>Eating</h3><ul class="list"><li>Soft, cool foods the first day.</li><li>Avoid hot, crunchy or spicy foods until comfortable.</li><li>Chew on the other side.</li></ul></div>
@@ -13,4 +26,22 @@
 <p>If you were happy with your care, you can share our information with family or friends who may need a dentist.</p>
 <p><a class="btn" href="refer.html">Share with family</a></p>
 </main>
+<script>
+(function(){
+ var els=document.querySelectorAll('.video[data-yt]');
+ for(var i=0;i<els.length;i++){
+  var el=els[i],id=(el.getAttribute('data-yt')||'').trim();
+  if(!/^[A-Za-z0-9_-]{11}$/.test(id))continue;
+  var f=document.createElement('iframe');
+  f.src='https://www.youtube-nocookie.com/embed/'+id+'?rel=0';
+  f.title=el.getAttribute('data-title')||'Video';
+  f.loading='lazy';
+  f.allow='encrypted-media; picture-in-picture';
+  f.allowFullscreen=true;
+  el.textContent='';
+  el.className+=' ready';
+  el.appendChild(f);
+ }
+})();
+</script>
 <footer>Rimrock Mobile Dentistry PLLC &middot; San Antonio, Texas &middot; <span class="todo">[PHONE]</span> &middot; <span class="todo">[EMAIL]</span><br>This website provides general information and is not a substitute for professional dental advice. Do not send private health information through this site.</footer></body></html>
